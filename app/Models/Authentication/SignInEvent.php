@@ -10,6 +10,6 @@ class SignInEvent extends Model
     use HasFactory;
 
     protected $fillable = [
-        'id', 'user_account_id', 'time', 'ip_address', 'user_agent'
+        'id', 'user_account_id', 'time', 'ip_address', 'user_agent',
     ];
 }

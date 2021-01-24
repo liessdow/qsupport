@@ -40,7 +40,7 @@ class AuthenticatedSessionController extends Controller
             'user_account_id' => auth()->guard('web')->user()->id,
             'time' => Carbon::now(),
             'ip_address' => $request->ip(),
-            'user_agent' => $request->server('HTTP_USER_AGENT')
+            'user_agent' => $request->server('HTTP_USER_AGENT'),
         ]);
 
         return redirect(RouteServiceProvider::HOME);
