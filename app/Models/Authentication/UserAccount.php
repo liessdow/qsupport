@@ -3,8 +3,8 @@
 namespace App\Models\Authentication;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 class UserAccount extends Authenticatable
@@ -17,7 +17,7 @@ class UserAccount extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'id', 'email', 'password', 'first_name', 'last_name'
+        'id', 'email', 'password', 'first_name', 'last_name',
     ];
 
     public function signInEvents()
